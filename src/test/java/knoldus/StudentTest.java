@@ -64,4 +64,11 @@ import java.util.Optional;
         Assert.assertEquals(expectedSubject, actualSubject);
     }
 
+    @Test
+        public void testToString() {
+        String actualResult = student.toString();
+        String expectedResult = "Student{name='Krishna', rollNumber=4, subject=Optional[Java]}";
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
 }
